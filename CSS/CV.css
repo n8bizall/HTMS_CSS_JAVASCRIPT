@@ -1,0 +1,17 @@
+h2{border: double;
+}
+
+p{
+	font-family: Times New Roman;
+}
+
+.topics{
+	color:#25cee4;
+	font-size:2.0em;
+}
+.bolded{
+	font-weight:bold;
+	font-family: cursive;
+	font-style: italic;
+	
+}
