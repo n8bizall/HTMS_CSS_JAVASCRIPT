@@ -1,0 +1,33 @@
+<!doctype html>                       
+<html lang="en">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script lang="javascript">
+               var arr = []  //array variable
+
+               $().ready(function(){
+                $("#add").click(function(){
+                    var nbr = $("#inp").val();
+                    arr.push(nbr);
+                    $("#lbl").text(arr.join(" "));
+                    $("#inp").val("");
+                });
+                $("#mult").click(function(){
+                    var total = 1;
+                    for(var item of arr)
+                        total *= item;
+                        $("#lbl").text(total);
+                        arr = [];
+                });
+                } );
+		</script>
+</head>
+<body >
+    <h1>Mulitply Array</h1>
+    <input id="inp" type="text">
+    <button id="add" >ADD</button>
+    <button id="mult" >MULTIPLY ALL</button>
+    <label id="lbl" ></label>
+</body>
+</html>

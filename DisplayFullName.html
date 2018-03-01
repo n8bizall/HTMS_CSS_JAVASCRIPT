@@ -1,0 +1,27 @@
+<!doctype html>                       
+<html lang="en">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script lang="javascript">
+            
+            $().ready(function(){
+                $("#concat").click(function(){
+                    var fName = $("#first").val();
+                    var lName = $("#last").val();
+                    var fullName = fName.concat(" ",lName);
+                    $("#label").text(fullName);
+            })
+            })
+		</script>
+</head>
+<body >
+    <h1>Display Full Name</h1>
+    
+<p></p>
+<input id="first" type="text">
+<input id="last" type="text">
+<button id="concat" >Display Full Name</button>
+<label id="label" type="text"></label>
+</body>
+</html>
